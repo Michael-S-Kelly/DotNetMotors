@@ -47,6 +47,7 @@ Then select and open ```DotNetMotors.sln```
 ## Collaborators, Contributors, and Other Resources used
 
 ### Collaborators
+#### Jason Few
 
 ### Contributors
 
