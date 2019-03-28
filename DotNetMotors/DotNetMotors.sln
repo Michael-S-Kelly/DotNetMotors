@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28307.489
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetMotors", "DotNetMotors\DotNetMotors.csproj", "{04F3DD80-5C42-43D1-BEE8-104FC5D55C39}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetMotors_TDD", "DotNetMotors_TDD\DotNetMotors_TDD.csproj", "{0B35FC72-22A3-49CF-98A2-5EC10F88EFBB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{04F3DD80-5C42-43D1-BEE8-104FC5D55C39}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{04F3DD80-5C42-43D1-BEE8-104FC5D55C39}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{04F3DD80-5C42-43D1-BEE8-104FC5D55C39}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B35FC72-22A3-49CF-98A2-5EC10F88EFBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B35FC72-22A3-49CF-98A2-5EC10F88EFBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B35FC72-22A3-49CF-98A2-5EC10F88EFBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B35FC72-22A3-49CF-98A2-5EC10F88EFBB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
