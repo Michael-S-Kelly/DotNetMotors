@@ -5,21 +5,18 @@ using System.Text;
 
 namespace DotNetMotors.Classes
 {
-    public class Amphibious : Water, ISteeringWheel, IPropeller
+    public class Sudan : Ground, ISteeringWheel
     {
-        public override string WaterUse { get; set; } = "to have fun";
+        public override string GroundUse { get; set; } = "to get to work";
         public override int Passengers { get; set; } = 4;
         public override int Wheels { get; set; } = 4;
-        public override int Speed { get; set; } = 30;
-        public override string Type { get; set; } = "Amphibious Vehicle";
+        public override string Type { get; set; } = "Sudan Car";
         public bool SteeringWheel { get; set; } = true;
-        public string Propellers { get; set; } = "I have 2 propellers to go and steer on water.";
-
 
 
         public override string CatchPhrase()
         {
-            return "Water or Land, I travel on both.";
+            return "I owe so off to work I go.";
         }
 
         public override string Description()
@@ -29,7 +26,7 @@ namespace DotNetMotors.Classes
 
         public override string UsedFor()
         {
-            return $"I travel on the {TravelMethod} and I'm used {WaterUse}.";
+            return $"I travel on the {TravelMethod}.";
         }
     }
 }
