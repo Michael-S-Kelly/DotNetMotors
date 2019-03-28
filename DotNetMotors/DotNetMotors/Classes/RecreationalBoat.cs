@@ -23,7 +23,7 @@ namespace DotNetMotors.Classes
 
         public override string Description()
         {
-            return $"I am a {Type} that carries {Passengers} passengers and travel at a speed of {Speed}mph.  It is {SteeringWheel} that I have a steering wheel to control me.";
+            return $"I am a {Type} that carries {Passengers} passengers and travel at a speed of {Speed}mph.  It is {SteeringWheel} that I have a steering wheel to control me.  {Propellers}";
         }
 
         public override string UsedFor()
