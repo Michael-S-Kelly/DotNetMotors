@@ -1,14 +1,17 @@
-﻿using System;
+﻿using DotNetMotors.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace DotNetMotors.Classes
 {
-    class Helicopter : Air
+    public class Helicopter : Air, IPropeller
     {
         public override int Passengers { get; set; } = 4;
         public override int Speed { get; set; } = 60;
         public override string Type { get; set; } = "Helicopter";
+        public string Propellers { get; set; } = "I have 2 propellers; one to fly and one to stablize and control where I go.";
+
 
         public override string CatchPhrase()
         {

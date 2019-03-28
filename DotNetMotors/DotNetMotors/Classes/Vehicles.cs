@@ -4,7 +4,7 @@ using System.Text;
 
 namespace DotNetMotors
 {
-    abstract class Vehicles
+    public abstract class Vehicles
     {
         public abstract int Passengers { get; set; }
         public abstract int Speed { get; set; }
