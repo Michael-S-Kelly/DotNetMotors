@@ -6,7 +6,7 @@ using System.Text;
 namespace DotNetMotors.Classes
 {
     /// <summary>
-    /// Defines the property of the Passengers.
+    /// Defines the property of the Passengers as 60.
     /// </summary>
     public abstract class Plane : Air
     {
