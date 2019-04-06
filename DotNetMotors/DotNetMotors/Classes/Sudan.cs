@@ -13,17 +13,28 @@ namespace DotNetMotors.Classes
         public override string Type { get; set; } = "Sudan Car";
         public bool SteeringWheel { get; set; } = true;
 
-
+        /// <summary>
+        /// Defines the catch phrase
+        /// </summary>
+        /// <returns>catch phrase</returns>
         public override string CatchPhrase()
         {
             return "I owe so off to work I go.";
         }
 
+        /// <summary>
+        /// Defines the Description
+        /// </summary>
+        /// <returns>Description</returns>
         public override string Description()
         {
             return $"I am a {Type} that carries {Passengers} passengers, travels at a speed of {Speed}mph and I have {Wheels} wheels.  It is {SteeringWheel} that I have a steering wheel to control me.";
         }
 
+        /// <summary>
+        /// Defines what it is used for
+        /// </summary>
+        /// <returns>Used for</returns>
         public override string UsedFor()
         {
             return $"I travel on the {TravelMethod}.";
