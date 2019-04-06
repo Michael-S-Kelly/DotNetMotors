@@ -1,16 +1,14 @@
-﻿using DotNetMotors.Interfaces;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace DotNetMotors.Classes
 {
-    public class Helicopter : Air, IPropeller
+    public class JetPlane : Plane
     {
-        public override int Passengers { get; set; } = 4;
-        public override int Speed { get; set; } = 60;
-        public override string Type { get; set; } = "Helicopter";
-        public string Propellers { get; set; } = "I have 2 propellers; one to fly and one to stablize and control where I go.";
+        public override int Speed { get; set; } = 250;
+        public override int Wheels { get; set; } = 5;
+        public override string Type { get; set; } = "Prop Air Plane";
 
         /// <summary>
         /// Defines the catch phrase
@@ -18,7 +16,7 @@ namespace DotNetMotors.Classes
         /// <returns>catch phrase</returns>
         public override string CatchPhrase()
         {
-            return "I fly the friendly skies.";
+            return "I'm a puddle hopper.";
         }
 
         /// <summary>
@@ -27,7 +25,7 @@ namespace DotNetMotors.Classes
         /// <returns>Description</returns>
         public override string Description()
         {
-            return $"I am a {Type} that carries {Passengers} passengers and travels at a speed of {Speed}mph.";
+            return $"I am a {Type} that carries {Passengers} passengers, travels at a speed of {Speed}mph and I have {Wheels} wheels.";
         }
 
         /// <summary>

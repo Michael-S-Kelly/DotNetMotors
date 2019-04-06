@@ -8,10 +8,12 @@ namespace DotNetMotors
     {
         static void Main(string[] args)
         {
+
             FishingBoatMessage();
             RecreationalBoatMessage();
             AmphibiousMessage();
-            PlaneMessage();
+            JetPlaneMessage();
+            PropPlaneMessage();
             HelicopterMessage();
             SudanMessage();
             TruckMessage();
@@ -19,6 +21,9 @@ namespace DotNetMotors
             Console.ReadKey();
         }
 
+        /// <summary>
+        /// Creates a writeline to prove each inheritence and interface
+        /// </summary>
         static void FishingBoatMessage()
         {
             FishingBoat fishingBoat = new FishingBoat();
@@ -31,6 +36,9 @@ namespace DotNetMotors
             Console.WriteLine(" ");
         }
 
+        /// <summary>
+        /// Creates a writeline to prove each inheritence and interface
+        /// </summary>
         static void RecreationalBoatMessage()
         {
             RecreationalBoat recreationalBoat = new RecreationalBoat();
@@ -43,6 +51,9 @@ namespace DotNetMotors
             Console.WriteLine(" ");
         }
 
+        /// <summary>
+        /// Creates a writeline to prove each inheritence and interface
+        /// </summary>
         static void AmphibiousMessage()
         {
             Amphibious amphibious = new Amphibious();
@@ -55,9 +66,12 @@ namespace DotNetMotors
             Console.WriteLine(" ");
         }
 
-        static void PlaneMessage()
+        /// <summary>
+        /// Creates a writeline to prove each inheritence and interface
+        /// </summary>
+        static void PropPlaneMessage()
         {
-            Plane plane = new Plane();
+            PropPlane plane = new PropPlane();
             string phrase = plane.Description();
             Console.WriteLine(phrase);
             phrase = plane.UsedFor();
@@ -67,6 +81,24 @@ namespace DotNetMotors
             Console.WriteLine(" ");
         }
 
+        /// <summary>
+        /// Creates a writeline to prove each inheritence and interface
+        /// </summary>
+        static void JetPlaneMessage()
+        {
+            JetPlane plane = new JetPlane();
+            string phrase = plane.Description();
+            Console.WriteLine(phrase);
+            phrase = plane.UsedFor();
+            Console.WriteLine(phrase);
+            phrase = plane.CatchPhrase();
+            Console.WriteLine(phrase);
+            Console.WriteLine(" ");
+        }
+
+        /// <summary>
+        /// Creates a writeline to prove each inheritence and interface
+        /// </summary>
         static void HelicopterMessage()
         {
             Helicopter helicopter = new Helicopter();
@@ -79,6 +111,9 @@ namespace DotNetMotors
             Console.WriteLine(" ");
         }
 
+        /// <summary>
+        /// Creates a writeline to prove each inheritence and interface
+        /// </summary>
         static void SudanMessage()
         {
             Sudan sudan = new Sudan();
@@ -91,6 +126,9 @@ namespace DotNetMotors
             Console.WriteLine(" ");
         }
 
+        /// <summary>
+        /// Creates a writeline to prove each inheritence and interface
+        /// </summary>
         static void TruckMessage()
         {
             Truck truck = new Truck();
@@ -103,6 +141,9 @@ namespace DotNetMotors
             Console.WriteLine(" ");
         }
 
+        /// <summary>
+        /// Creates a writeline to prove each inheritence and interface
+        /// </summary>
         static void MotorcycleMessage()
         {
             Motorcycle motorcycle = new Motorcycle();

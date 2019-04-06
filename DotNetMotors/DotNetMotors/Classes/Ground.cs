@@ -4,6 +4,9 @@ using System.Text;
 
 namespace DotNetMotors.Classes
 {
+    /// <summary>
+    /// This impliments the TravelMethod and Speed property.  It also creates a new abstract property; GroundUse.
+    /// </summary>
     public abstract class Ground : Vehicles
     {
         public override int Speed { get; set; } = 60;

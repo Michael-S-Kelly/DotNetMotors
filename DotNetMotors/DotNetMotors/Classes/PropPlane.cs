@@ -5,13 +5,12 @@ using System.Text;
 
 namespace DotNetMotors.Classes
 {
-    public class Sudan : Ground, ISteeringWheel
+    public class PropPlane : Plane, IPropeller
     {
-        public override string GroundUse { get; set; } = "to get to work";
-        public override int Passengers { get; set; } = 4;
-        public override int Wheels { get; set; } = 4;
-        public override string Type { get; set; } = "Sudan Car";
-        public bool SteeringWheel { get; set; } = true;
+        public override int Speed { get; set; } = 250;
+        public override int Wheels { get; set; } = 5;
+        public override string Type { get; set; } = "Prop Air Plane";
+        public string Propellers { get; set; } = "I have 4 propellers to keep me in the air.";
 
         /// <summary>
         /// Defines the catch phrase
@@ -19,7 +18,7 @@ namespace DotNetMotors.Classes
         /// <returns>catch phrase</returns>
         public override string CatchPhrase()
         {
-            return "I owe so off to work I go.";
+            return "I'm a puddle hopper.";
         }
 
         /// <summary>
@@ -28,7 +27,7 @@ namespace DotNetMotors.Classes
         /// <returns>Description</returns>
         public override string Description()
         {
-            return $"I am a {Type} that carries {Passengers} passengers, travels at a speed of {Speed}mph and I have {Wheels} wheels.  It is {SteeringWheel} that I have a steering wheel to control me.";
+            return $"I am a {Type} that carries {Passengers} passengers, travels at a speed of {Speed}mph and I have {Wheels} wheels.  {Propellers}";
         }
 
         /// <summary>
@@ -37,7 +36,7 @@ namespace DotNetMotors.Classes
         /// <returns>Used for</returns>
         public override string UsedFor()
         {
-            return $"I travel on the {TravelMethod}.";
+            return $"I travel in the {TravelMethod}.";
         }
     }
 }
