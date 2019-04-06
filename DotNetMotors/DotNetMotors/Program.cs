@@ -12,7 +12,8 @@ namespace DotNetMotors
             FishingBoatMessage();
             RecreationalBoatMessage();
             AmphibiousMessage();
-            PlaneMessage();
+            JetPlaneMessage();
+            PropPlaneMessage();
             HelicopterMessage();
             SudanMessage();
             TruckMessage();
@@ -56,9 +57,20 @@ namespace DotNetMotors
             Console.WriteLine(" ");
         }
 
-        static void PlaneMessage()
+        static void PropPlaneMessage()
         {
-            Plane plane = new Plane();
+            PropPlane plane = new PropPlane();
+            string phrase = plane.Description();
+            Console.WriteLine(phrase);
+            phrase = plane.UsedFor();
+            Console.WriteLine(phrase);
+            phrase = plane.CatchPhrase();
+            Console.WriteLine(phrase);
+            Console.WriteLine(" ");
+        }
+        static void JetPlaneMessage()
+        {
+            JetPlane plane = new JetPlane();
             string phrase = plane.Description();
             Console.WriteLine(phrase);
             phrase = plane.UsedFor();
